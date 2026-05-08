@@ -1,0 +1,17 @@
+# top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+charset = utf-8
+
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Use tabs and display them 4 wide
+indent_style = tab
+tab_width = 4
+
+# Since this is a C project, prefer the double quotes for other languages
+quote_style = double
