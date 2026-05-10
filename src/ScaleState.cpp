@@ -5,24 +5,26 @@ void ScaleState::read(ScaleState &settings, JsonObject &root)
 	root["weight"] = settings.weight;
 }
 
-StateUpdateResult ScaleState::update(JsonObject &root, ScaleState &lightState,
+StateUpdateResult ScaleState::update(JsonObject &root, ScaleState &scaleState,
 	const String& originID)
 {
-
+	// TODO
+	return StateUpdateResult::ERROR;
 }
 
-void ScaleState::homeAssistRead(ScaleState &settings, JsonObject &root)
+void ScaleState::mqttRead(ScaleState &settings, JsonObject &root)
 {
-
+	// TODO
 }
 
-StateUpdateResult ScaleState::homeAssistUpdate(JsonObject &root, ScaleState &lightState,
+StateUpdateResult ScaleState::mqttUpdate(JsonObject &root, ScaleState &scaleState,
 	const String& originID)
 {
-
+	// TODO
+	return update(root, scaleState, originID);
 }
 
 void ScaleState::tare()
 {
-
+	// TODO
 }

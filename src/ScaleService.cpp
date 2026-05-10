@@ -4,14 +4,14 @@
  */
 
 #include "ScaleService.hpp"
-
 #include "Constants.hpp"
 
 
 ScaleService::ScaleService(
 	PsychicHttpServer* server,
 	ESP32SvelteKit* svelteKit,
-	ScaleMqttSettingsService* scaleMqttSettingsService
+	ScaleMqttSettingsService* scaleMqttSettingsService,
+	HX711* loadcell
 ) :
 	httpEndpoint(
 		ScaleState::read,
@@ -45,11 +45,9 @@ ScaleService::ScaleService(
 		AuthenticationPredicates::IS_AUTHENTICATED
 	),
 	mqttClient(svelteKit->getMqttClient()),
-	scaleMqttSettingsService(scaleMqttSettingsService)
+	scaleMqttSettingsService(scaleMqttSettingsService),
+	loadcell(loadcell)
 {
-	// configure led to be output
-	pinMode(LED_BUILTIN, OUTPUT);
-
 	// configure MQTT callback
 	mqttClient->onConnect(std::bind(&ScaleService::registerConfig, this));
 
@@ -69,7 +67,7 @@ void ScaleService::begin()
 	httpEndpoint.begin();
 	eventEndpoint.begin();
 
-	// TODO Init default state
+	initHardware();
 
 	onConfigUpdated();
 }
@@ -107,4 +105,9 @@ void ScaleService::registerConfig()
     mqttClient->publish(configTopic.c_str(), 0, false, payload.c_str());
 
     mqttEndpoint.configureTopics(pubTopic, subTopic);
+}
+
+void ScaleService::initHardware()
+{
+
 }
