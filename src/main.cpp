@@ -42,6 +42,8 @@ ScaleService scaleService = ScaleService(
 	&loadcell
 );
 
+JsonDocument loopDoc;
+
 void setup()
 {
     // start serial and filesystem
@@ -65,6 +67,21 @@ void setup()
 
 void loop()
 {
-    // Delete Arduino loop task, as it is not needed in this example
-    vTaskDelete(NULL);
+	// Read from HX711 ic and put it in JSON
+	float reading = loadcell.get_units(10);
+	loopDoc["weight"] = reading;
+
+	// Push update to state manager
+	scaleService.update([&](ScaleState& state) {
+		if(state.weight != reading)
+		{
+			state.weight = reading;
+			return StateUpdateResult::CHANGED;
+		}
+
+		return StateUpdateResult::UNCHANGED;
+	}, "loop");
+
+	// No need to sample at max speed
+	delay(1000);
 }

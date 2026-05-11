@@ -20,7 +20,7 @@ ScaleService::ScaleService(
 		server,
 		SCALE_SETTINGS_ENDPOINT_PATH,
 		svelteKit->getSecurityManager(),
-		AuthenticationPredicates::IS_AUTHENTICATED
+		AuthenticationPredicates::NONE_REQUIRED
 	),
 	eventEndpoint(
 		ScaleState::read,

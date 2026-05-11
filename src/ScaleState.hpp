@@ -12,15 +12,15 @@ public:
 	/** The measured weight in Kilogram */
     float weight;
 
-    static void read(ScaleState &StateHookHandlerInfo_t, JsonObject &root);
+    static void read(ScaleState &state, JsonObject &root);
 
-    static StateUpdateResult update(JsonObject &root, ScaleState &scaleState,
+    static StateUpdateResult update(JsonObject &root, ScaleState &state,
 		const String& originID
 	);
 
     static void mqttRead(ScaleState &state, JsonObject &root);
 
-    static StateUpdateResult mqttUpdate(JsonObject &root, ScaleState &scaleState,
+    static StateUpdateResult mqttUpdate(JsonObject &root, ScaleState &state,
 		const String& originID
 	);
 
