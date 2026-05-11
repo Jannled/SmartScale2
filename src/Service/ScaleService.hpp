@@ -12,8 +12,8 @@
 
 #include <HX711.h>
 
-#include "ScaleState.hpp"
-#include "ScaleMqttSettingsService.hpp"
+#include "Entity/ScaleState.hpp"
+#include "Service/ScaleMqttSettingsService.hpp"
 
 #define SCALE_SETTINGS_ENDPOINT_PATH "/rest/scaleState"
 #define SCALE_SETTINGS_SOCKET_PATH "/ws/scaleState"

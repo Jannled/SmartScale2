@@ -15,8 +15,8 @@
 #include <ESP32SvelteKit.h>
 #include <PsychicHttpServer.h>
 
-#include "ScaleService.hpp"
-#include "ScaleMqttSettingsService.hpp"
+#include "Service/ScaleService.hpp"
+#include "Service/ScaleMqttSettingsService.hpp"
 
 #define SERIAL_BAUD_RATE 115200
 

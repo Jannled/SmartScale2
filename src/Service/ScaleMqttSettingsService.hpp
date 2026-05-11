@@ -10,7 +10,7 @@
 #include <FSPersistence.h>
 #include <HttpEndpoint.h>
 
-#include "ScaleMqttSettings.hpp"
+#include "Entity/ScaleMqttSettings.hpp"
 
 #define SCALE_BROKER_SETTINGS_FILE "/config/brokerSettings.json"
 #define SCALE_BROKER_SETTINGS_PATH "/rest/brokerSettings"
