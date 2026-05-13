@@ -60,6 +60,10 @@ export type LightState = {
 	led_on: boolean;
 };
 
+export type ScaleState = {
+	weight: number;
+};
+
 export type BrokerSettings = {
 	mqtt_path: string;
 	name: string;

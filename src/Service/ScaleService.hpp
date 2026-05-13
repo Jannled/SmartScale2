@@ -17,7 +17,7 @@
 
 #define SCALE_SETTINGS_ENDPOINT_PATH "/rest/scaleState"
 #define SCALE_SETTINGS_SOCKET_PATH "/ws/scaleState"
-#define SCALE_SETTINGS_EVENT "TODO"
+#define SCALE_SETTINGS_EVENT "scale"
 
 class ScaleService : public StatefulService<ScaleState>
 {
