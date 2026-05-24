@@ -24,3 +24,6 @@ ssl_certs/cacert.pem
 
 compile_commands.json
 .clangd
+
+# KiCad backups
+**/*-backups/*.zip

@@ -42,8 +42,6 @@ ScaleService scaleService = ScaleService(
 	&loadcell
 );
 
-JsonDocument loopDoc;
-
 void setup()
 {
     // start serial and filesystem
@@ -69,7 +67,6 @@ void loop()
 {
 	// Read from HX711 ic and put it in JSON
 	float reading = loadcell.get_units(10);
-	loopDoc["weight"] = reading;
 
 	// Push update to state manager
 	scaleService.update([&](ScaleState& state) {
