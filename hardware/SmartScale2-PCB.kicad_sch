@@ -1754,6 +1754,177 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector_Generic:Conn_01x03"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x03"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x03_1_1"
+				(rectangle
+					(start -1.27 3.81)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector_Generic:Conn_01x06"
 			(pin_names
 				(offset 1.016)
@@ -5359,7 +5530,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transistor_BJT:Q_PNP_EBC"
+		(symbol "Transistor_BJT:Q_PNP_BEC"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -5376,7 +5547,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "Q_PNP_EBC"
+			(property "Value" "Q_PNP_BEC"
 				(at 5.08 -1.27 0)
 				(effects
 					(font
@@ -5403,7 +5574,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "PNP transistor, emitter/base/collector"
+			(property "Description" "PNP transistor, base/emitter/collector"
 				(at 0 0 0)
 				(effects
 					(font
@@ -5421,7 +5592,7 @@
 					(hide yes)
 				)
 			)
-			(property "Sim.Pins" "1=E 2=B 3=C"
+			(property "Sim.Pins" "1=B 2=E 3=C"
 				(at 0 0 0)
 				(effects
 					(font
@@ -5439,7 +5610,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Q_PNP_EBC_0_1"
+			(symbol "Q_PNP_BEC_0_1"
 				(polyline
 					(pts
 						(xy -2.54 0) (xy 0.635 0)
@@ -5512,7 +5683,7 @@
 					)
 				)
 			)
-			(symbol "Q_PNP_EBC_1_1"
+			(symbol "Q_PNP_BEC_1_1"
 				(pin input line
 					(at -5.08 0 0)
 					(length 2.54)
@@ -5523,7 +5694,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5559,7 +5730,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6506,6 +6677,16 @@
 	)
 	(wire
 		(pts
+			(xy 158.75 143.51) (xy 161.29 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e0fd65d-7932-4c65-9ee4-07b4558b266a")
+	)
+	(wire
+		(pts
 			(xy 208.28 24.13) (xy 208.28 35.56)
 		)
 		(stroke
@@ -7046,6 +7227,16 @@
 	)
 	(wire
 		(pts
+			(xy 160.02 147.32) (xy 160.02 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "521a2f3c-fd9a-4a6e-be17-193f2ba5d5f8")
+	)
+	(wire
+		(pts
 			(xy 212.09 55.88) (xy 219.71 55.88)
 		)
 		(stroke
@@ -7183,6 +7374,16 @@
 			(type default)
 		)
 		(uuid "63adacd6-e8f5-403c-973a-9545ae556040")
+	)
+	(wire
+		(pts
+			(xy 160.02 146.05) (xy 161.29 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6638c7c3-14a5-4508-af0d-840724f5d21c")
 	)
 	(wire
 		(pts
@@ -7706,6 +7907,16 @@
 	)
 	(wire
 		(pts
+			(xy 21.59 43.18) (xy 29.21 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4accbe5-114d-4a1f-9981-abf290992c50")
+	)
+	(wire
+		(pts
 			(xy 275.59 40.64) (xy 262.89 40.64)
 		)
 		(stroke
@@ -7916,6 +8127,16 @@
 	)
 	(wire
 		(pts
+			(xy 21.59 45.72) (xy 29.21 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d12b24f7-57b9-40cd-b463-ac1c5f1d7dc9")
+	)
+	(wire
+		(pts
 			(xy 208.28 35.56) (xy 219.71 35.56)
 		)
 		(stroke
@@ -7953,6 +8174,16 @@
 			(type default)
 		)
 		(uuid "d34b3fb3-a5ec-4fe7-a296-e0f4053cc4c7")
+	)
+	(wire
+		(pts
+			(xy 158.75 140.97) (xy 161.29 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d700d7ca-161f-4479-afa6-da33995c9614")
 	)
 	(wire
 		(pts
@@ -8394,6 +8625,26 @@
 		)
 		(uuid "33a4a7f2-3577-4e53-879f-6c2b0b057a05")
 	)
+	(label "T2"
+		(at 158.75 143.51 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3495d2fb-fda8-403f-9cec-814f2b3d638f")
+	)
+	(label "T1"
+		(at 21.59 43.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "373bc695-207f-409e-9aa5-b294841b77f4")
+	)
 	(label "MTDI"
 		(at 21.59 55.88 0)
 		(effects
@@ -8414,7 +8665,7 @@
 		)
 		(uuid "3f605f82-9012-4e52-8d34-9301704c7c3b")
 	)
-	(label "A+"
+	(label "A-"
 		(at 143.51 83.82 180)
 		(effects
 			(font
@@ -8423,6 +8674,16 @@
 			(justify right bottom)
 		)
 		(uuid "47225f52-fce9-4612-bcde-bbf3b97436a8")
+	)
+	(label "T2"
+		(at 21.59 45.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "51dc8f48-d701-4b7e-95ed-ef592c503690")
 	)
 	(label "MTDI"
 		(at 67.31 132.08 180)
@@ -8444,6 +8705,16 @@
 		)
 		(uuid "6efd43d1-00af-4f1d-a2bd-5df48960f297")
 	)
+	(label "SDA"
+		(at 107.95 82.55 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6f2569f3-42bf-4f5e-9973-856b5d832788")
+	)
 	(label "USB_ESD_N"
 		(at 237.49 127 180)
 		(effects
@@ -8455,7 +8726,7 @@
 		(uuid "72e8924c-89a0-4900-90d1-70570c36311f")
 	)
 	(label "HX711_SCK"
-		(at 113.03 64.77 180)
+		(at 107.95 67.31 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8473,6 +8744,16 @@
 			(justify right bottom)
 		)
 		(uuid "77566f5a-71aa-4b70-bbd0-2059d3262e36")
+	)
+	(label "Q1_E"
+		(at 226.06 24.13 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "831af1d5-3ee4-4829-9d4d-39ae5807d571")
 	)
 	(label "Reset"
 		(at 67.31 119.38 180)
@@ -8505,7 +8786,7 @@
 		(uuid "8dd5d308-faf1-48a1-9819-f21b15eb8dd0")
 	)
 	(label "HX711_DOUT"
-		(at 113.03 62.23 180)
+		(at 107.95 64.77 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8524,6 +8805,26 @@
 		)
 		(uuid "99a45a9e-723a-42d0-a10b-39af9a92b7c9")
 	)
+	(label "Q1_B"
+		(at 214.63 33.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9e9d46a3-26b0-4deb-b396-56cada5fb21e")
+	)
+	(label "SCL"
+		(at 107.95 80.01 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a28345b1-27ea-4822-982b-6a3f60e8e9dc")
+	)
 	(label "A-"
 		(at 196.85 50.8 0)
 		(effects
@@ -8533,6 +8834,16 @@
 			(justify left bottom)
 		)
 		(uuid "a5d94ad1-eb0c-4cf4-837d-b24bef032266")
+	)
+	(label "Q1_C"
+		(at 208.28 24.13 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b7d4affb-cf8b-4cca-b987-5d665b05f06e")
 	)
 	(label "MTMS"
 		(at 67.31 127 180)
@@ -8544,7 +8855,7 @@
 		)
 		(uuid "ca501b2c-e55d-4f1c-ad24-b1125f90d3a3")
 	)
-	(label "A-"
+	(label "A+"
 		(at 143.51 86.36 180)
 		(effects
 			(font
@@ -8564,7 +8875,7 @@
 		)
 		(uuid "d2e38799-252c-41f7-91c6-5c0d2388190f")
 	)
-	(label "B+"
+	(label "B-"
 		(at 143.51 88.9 180)
 		(effects
 			(font
@@ -8573,6 +8884,16 @@
 			(justify right bottom)
 		)
 		(uuid "d80f40a8-370d-4274-8065-f942e45fb0dd")
+	)
+	(label "T1"
+		(at 158.75 140.97 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e3c77af4-593b-41c1-94a4-22d7d8d7e0fb")
 	)
 	(label "E+"
 		(at 172.72 24.13 0)
@@ -8584,7 +8905,7 @@
 		)
 		(uuid "e4333aef-58d5-4935-999e-f4ed8c700bd4")
 	)
-	(label "B-"
+	(label "B+"
 		(at 143.51 91.44 180)
 		(effects
 			(font
@@ -9728,7 +10049,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric_Pad1.05x1.20mm_HandSolder"
 			(at 184.15 24.13 0)
 			(effects
 				(font
@@ -9831,6 +10152,79 @@
 			(project "SmartScale2-PCB"
 				(path "/eb8fe25f-2338-48bc-9e7d-778edca2e81f"
 					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 166.37 143.51 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "33c7a9dd-ea82-49db-bd4e-60aae6b94b42")
+		(property "Reference" "J7"
+			(at 168.91 144.7801 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x03"
+			(at 168.91 142.2401 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 166.37 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 166.37 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 166.37 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "6cef6e33-6953-44bd-bb4d-0fe7430d0629")
+		)
+		(pin "2"
+			(uuid "e0fad2ac-91b7-4803-882d-890841d5f520")
+		)
+		(pin "1"
+			(uuid "68872d37-678f-47c5-8725-504691e9235d")
+		)
+		(instances
+			(project "SmartScale2-PCB"
+				(path "/eb8fe25f-2338-48bc-9e7d-778edca2e81f"
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -11707,6 +12101,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 160.02 147.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8ac42c74-cf79-4246-9df7-63ee922ee154")
+		(property "Reference" "#PWR029"
+			(at 160.02 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 160.02 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b96ff2ac-ce4d-42ca-9d29-120543e2225c")
+		)
+		(instances
+			(project "SmartScale2-PCB"
+				(path "/eb8fe25f-2338-48bc-9e7d-778edca2e81f"
+					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 229.87 119.38 90)
 		(mirror x)
@@ -11781,7 +12241,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "918d8a0d-446e-4366-b318-bbc563234335")
 		(property "Reference" "R12"
@@ -11974,6 +12434,95 @@
 			(project "SmartScale2-PCB"
 				(path "/eb8fe25f-2338-48bc-9e7d-778edca2e81f"
 					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:Q_PNP_BEC")
+		(at 214.63 26.67 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "951ae438-a1f5-4da6-b7d2-ac06df286faf")
+		(property "Reference" "Q1"
+			(at 214.63 17.78 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MMBT4403"
+			(at 214.63 20.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 212.09 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/mmbt4403-d.pdf"
+			(at 214.63 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "PNP transistor, base/emitter/collector"
+			(at 214.63 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "PNP"
+			(at 214.63 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=B 2=E 3=C"
+			(at 214.63 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "14cd9a4b-654c-412d-a15c-870d6687da64")
+		)
+		(pin "1"
+			(uuid "dff767e5-a2c1-4b3b-89df-6bb6f5ac6704")
+		)
+		(pin "2"
+			(uuid "58aebf93-901a-4943-9ba0-755bc128ca95")
+		)
+		(instances
+			(project "SmartScale2-PCB"
+				(path "/eb8fe25f-2338-48bc-9e7d-778edca2e81f"
+					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -12325,95 +12874,6 @@
 			(project "SmartScale2-PCB"
 				(path "/eb8fe25f-2338-48bc-9e7d-778edca2e81f"
 					(reference "J3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:Q_PNP_EBC")
-		(at 214.63 26.67 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a5903d70-7984-462c-be0b-6c10a4dd9584")
-		(property "Reference" "Q1"
-			(at 214.63 17.78 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MMBT4403"
-			(at 214.63 20.32 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 212.09 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/mmbt4403-d.pdf"
-			(at 214.63 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "PNP transistor, emitter/base/collector"
-			(at 214.63 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "PNP"
-			(at 214.63 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=E 2=B 3=C"
-			(at 214.63 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d90357da-6c8e-488d-beee-62cff97bb577")
-		)
-		(pin "3"
-			(uuid "dbe51345-3284-4e24-b765-ff1e735a23ec")
-		)
-		(pin "2"
-			(uuid "3fc80732-6843-4895-b2e9-2a2b13955e57")
-		)
-		(instances
-			(project "SmartScale2-PCB"
-				(path "/eb8fe25f-2338-48bc-9e7d-778edca2e81f"
-					(reference "Q1")
 					(unit 1)
 				)
 			)
