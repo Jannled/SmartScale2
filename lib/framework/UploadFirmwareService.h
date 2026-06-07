@@ -42,6 +42,8 @@ constexpr uint8_t ESP_MAGIC_BYTE = 0xE9;       // ESP binary magic byte
     constexpr uint8_t ESP_CHIP_ID = 5;
 #elif CONFIG_IDF_TARGET_ESP32S3
     constexpr uint8_t ESP_CHIP_ID = 9;
+#elif CONFIG_IDF_TARGET_ESP32C6
+	constexpr uint8_t ESP_CHIP_ID = 13;
 #else
     #error "Unsupported ESP32 target"
 #endif
@@ -55,7 +57,7 @@ enum FileType
 
 /**
  * @brief Service for handling firmware uploads over HTTP with OTA support
- * 
+ *
  * Supports chunked uploads of .bin firmware files and .md5 hash files for validation.
  * Emits real-time progress updates via WebSocket and validates chip compatibility.
  */
@@ -117,14 +119,14 @@ private:
                            uint8_t *data,
                            size_t len,
                            bool final);
-    
+
     /**
      * @brief Called after upload finished (i.e. all chunks received)
      * @param request HTTP request object
      * @return ESP_OK on success, error code on failure
      */
     esp_err_t uploadComplete(PsychicRequest *request);
-    
+
     /**
      * @brief Handle upload errors and emit error events
      * @param request HTTP request object
@@ -133,7 +135,7 @@ private:
      * @return ESP_OK (error already handled)
      */
     esp_err_t handleError(PsychicRequest *request, int code, const char *message = nullptr);
-    
+
     /**
      * @brief Handle client disconnection during upload
      * @return ESP_OK on successful cleanup
