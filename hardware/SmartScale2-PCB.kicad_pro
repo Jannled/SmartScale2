@@ -74,6 +74,11 @@
           "gap": 0.0,
           "via_gap": 0.0,
           "width": 0.0
+        },
+        {
+          "gap": 0.127,
+          "via_gap": 0.0,
+          "width": 0.159512
         }
       ],
       "drc_exclusions": [],
@@ -211,7 +216,8 @@
       ],
       "track_widths": [
         0.0,
-        0.508
+        0.508,
+        1.016
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -526,6 +532,15 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "diff_pair_gap": 0.127,
+        "diff_pair_width": 0.159766,
+        "name": "USB",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
       }
     ],
     "meta": {
@@ -533,7 +548,12 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Default",
+        "pattern": "/USB_*"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -675,7 +695,7 @@
         "uuid": "eb8fe25f-2338-48bc-9e7d-778edca2e81f"
       }
     ],
-    "used_designators": "#PWR31",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [

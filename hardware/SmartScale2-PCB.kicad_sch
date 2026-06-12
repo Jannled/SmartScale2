@@ -12,6 +12,145 @@
 		(comment 1 "Author: Jannik Schmöle (@Jannled)")
 	)
 	(lib_symbols
+		(symbol "+3V3_1"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+3V3"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+3V3_1_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3V3_1_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Analog_ADC:HX711"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1788,7 +1927,7 @@
 							)
 						)
 					)
-					(number "S1"
+					(number "SH"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4254,6 +4393,102 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Mechanical:Fiducial"
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "FID"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Fiducial"
+				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Fiducial Marker"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "fiducial marker"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Fiducial*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Fiducial_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Mechanical:MountingHole"
 			(pin_names
 				(offset 1.016)
@@ -6260,145 +6495,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "VCC_1"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "VCC"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"VCC\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "VCC_1_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "VCC_1_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "_custom:TTP223-BA6"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -6589,145 +6685,6 @@
 					)
 					(fill
 						(type background)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "power:+3.3V"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "+3.3V"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+3.3V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+3.3V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
 					)
 				)
 			)
@@ -7277,10 +7234,10 @@
 		(uuid "07eb6df8-b5ea-49ff-990b-21e49a4dae05")
 	)
 	(junction
-		(at 205.74 151.13)
+		(at 137.16 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "13b9a159-0e40-45fd-856b-3db4a2e7012c")
+		(uuid "0d99d2f6-66ef-46eb-90db-df02c04bb3fb")
 	)
 	(junction
 		(at 229.87 24.13)
@@ -7301,10 +7258,22 @@
 		(uuid "252affe1-681f-4470-8385-d240365a56e2")
 	)
 	(junction
+		(at 172.72 154.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2ea8f237-0e44-4e3c-9d70-7b914d5a2cf1")
+	)
+	(junction
 		(at 132.08 176.53)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2ef14d84-ca27-488f-862e-18e500c680f0")
+	)
+	(junction
+		(at 205.74 151.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2f2987ae-bd03-412e-80f9-a9b9e7c550c0")
 	)
 	(junction
 		(at 262.89 40.64)
@@ -7608,6 +7577,16 @@
 	)
 	(wire
 		(pts
+			(xy 205.74 151.13) (xy 201.93 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c07dbdb-4c56-49e1-86e1-bc4ad7fb3493")
+	)
+	(wire
+		(pts
 			(xy 50.8 179.07) (xy 50.8 177.8)
 		)
 		(stroke
@@ -7625,16 +7604,6 @@
 			(type default)
 		)
 		(uuid "0cfde6ae-648d-47dc-8126-e04586f2d524")
-	)
-	(wire
-		(pts
-			(xy 90.17 60.96) (xy 104.14 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0e520957-0880-469d-a1d1-55a8ec07fffe")
 	)
 	(wire
 		(pts
@@ -7768,6 +7737,16 @@
 	)
 	(wire
 		(pts
+			(xy 26.67 45.72) (xy 34.29 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e9dfa49-0458-4af0-8f9e-f37e079efbd1")
+	)
+	(wire
+		(pts
 			(xy 86.36 142.24) (xy 86.36 140.97)
 		)
 		(stroke
@@ -7778,16 +7757,6 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 151.13) (xy 209.55 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "208660c9-7e3c-42a7-b2fe-6f92ad4723c8")
-	)
-	(wire
-		(pts
 			(xy 25.4 187.96) (xy 39.37 187.96)
 		)
 		(stroke
@@ -7795,6 +7764,16 @@
 			(type default)
 		)
 		(uuid "2154a3d9-e4ae-4470-86b1-9ed029dc252f")
+	)
+	(wire
+		(pts
+			(xy 90.17 58.42) (xy 106.68 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21cd1eb4-22ca-493f-8c20-dcfdcb8a0186")
 	)
 	(wire
 		(pts
@@ -8085,6 +8064,16 @@
 			(type default)
 		)
 		(uuid "3b6f201f-0fb8-4572-b838-f52fbbaa0c1e")
+	)
+	(wire
+		(pts
+			(xy 209.55 151.13) (xy 205.74 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b8307dd-feeb-4983-a7d6-be63af62cc11")
 	)
 	(wire
 		(pts
@@ -8428,16 +8417,6 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 58.42) (xy 104.14 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6ab7f864-1548-4cb5-998e-bbacea2db254")
-	)
-	(wire
-		(pts
 			(xy 104.14 78.74) (xy 90.17 78.74)
 		)
 		(stroke
@@ -8485,6 +8464,16 @@
 			(type default)
 		)
 		(uuid "6f28872d-a759-46ae-b9a3-99685adc5c6a")
+	)
+	(wire
+		(pts
+			(xy 172.72 154.94) (xy 172.72 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71d5bf84-d258-4114-9569-162fbd91f25d")
 	)
 	(wire
 		(pts
@@ -8548,16 +8537,6 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 151.13) (xy 209.55 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "79a7959e-515c-41bf-b827-20dc0f290d05")
-	)
-	(wire
-		(pts
 			(xy 72.39 171.45) (xy 71.12 171.45)
 		)
 		(stroke
@@ -8595,6 +8574,16 @@
 			(type default)
 		)
 		(uuid "7d831b01-2012-4178-9b45-1116729cc401")
+	)
+	(wire
+		(pts
+			(xy 172.72 154.94) (xy 182.88 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f10ba79-74fc-4b0f-8e1a-03a9e8f419f6")
 	)
 	(wire
 		(pts
@@ -8758,6 +8747,16 @@
 	)
 	(wire
 		(pts
+			(xy 90.17 60.96) (xy 106.68 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92f9a7b9-4f38-44ea-8b7b-2751bf9ec0d6")
+	)
+	(wire
+		(pts
 			(xy 50.8 179.07) (xy 55.88 179.07)
 		)
 		(stroke
@@ -8815,6 +8814,16 @@
 			(type default)
 		)
 		(uuid "99bc7dd3-8340-47b5-9799-8de2a57bdf78")
+	)
+	(wire
+		(pts
+			(xy 209.55 149.86) (xy 209.55 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b37b2fc-4618-47c1-b87b-685add5723ef")
 	)
 	(wire
 		(pts
@@ -8905,6 +8914,16 @@
 			(type default)
 		)
 		(uuid "a13f32a4-6b7c-4946-9219-af50c123b56d")
+	)
+	(wire
+		(pts
+			(xy 137.16 74.93) (xy 137.16 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2455755-eb4d-4f17-a163-f79c91686a7c")
 	)
 	(wire
 		(pts
@@ -9018,6 +9037,16 @@
 	)
 	(wire
 		(pts
+			(xy 201.93 151.13) (xy 201.93 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b71f72fa-e514-4a21-9c6a-e5bfad093aca")
+	)
+	(wire
+		(pts
 			(xy 49.53 175.26) (xy 50.8 175.26)
 		)
 		(stroke
@@ -9095,16 +9124,6 @@
 			(type default)
 		)
 		(uuid "bca8a353-d2f3-4036-88d8-490e4dc43b25")
-	)
-	(wire
-		(pts
-			(xy 201.93 151.13) (xy 205.74 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bd6fd50d-d6b5-42e2-9b22-9a27f32b179c")
 	)
 	(wire
 		(pts
@@ -9348,16 +9367,6 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 149.86) (xy 201.93 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e15f5136-c6dc-48e1-bb7d-5a03fb02069a")
-	)
-	(wire
-		(pts
 			(xy 162.56 53.34) (xy 157.48 53.34)
 		)
 		(stroke
@@ -9566,6 +9575,26 @@
 		)
 		(uuid "fde521cc-07c1-4c72-acc3-20aa059e0bb6")
 	)
+	(wire
+		(pts
+			(xy 172.72 144.78) (xy 172.72 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff1011de-767b-4251-acd7-c58642c3802f")
+	)
+	(wire
+		(pts
+			(xy 172.72 153.67) (xy 172.72 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff450841-1125-4afc-a21a-948ff450ba4f")
+	)
 	(label "MTDO"
 		(at 67.31 129.54 180)
 		(effects
@@ -9665,6 +9694,16 @@
 			(justify left bottom)
 		)
 		(uuid "1ce6b827-d234-465e-a2c1-933a7ca2e521")
+	)
+	(label "VBat_Div"
+		(at 182.88 154.94 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1f62e30e-b610-4a43-b1c3-077c6d8c0561")
 	)
 	(label "RX0"
 		(at 92.71 35.56 0)
@@ -9797,7 +9836,7 @@
 		(uuid "72e8924c-89a0-4900-90d1-70570c36311f")
 	)
 	(label "HX711_SCK"
-		(at 104.14 60.96 180)
+		(at 106.68 60.96 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9857,7 +9896,7 @@
 		(uuid "8dd5d308-faf1-48a1-9819-f21b15eb8dd0")
 	)
 	(label "HX711_DOUT"
-		(at 104.14 58.42 180)
+		(at 106.68 58.42 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9965,6 +10004,16 @@
 			(justify left bottom)
 		)
 		(uuid "e4333aef-58d5-4935-999e-f4ed8c700bd4")
+	)
+	(label "VBat_Div"
+		(at 26.67 45.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e5aac098-52b3-483c-aa84-5e20fa66ff97")
 	)
 	(label "TX0"
 		(at 92.71 33.02 0)
@@ -10343,9 +10392,8 @@
 		)
 	)
 	(symbol
-		(lib_name "VCC_1")
-		(lib_id "power:VCC")
-		(at 279.4 21.59 0)
+		(lib_id "power:GND")
+		(at 172.72 163.83 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10354,9 +10402,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "0392bb0d-0672-4b00-bdb0-c506816d3673")
-		(property "Reference" "#PWR027"
-			(at 279.4 25.4 0)
+		(uuid "0911fc1a-9b0e-4699-9afc-82c02ca04b8d")
+		(property "Reference" "#PWR022"
+			(at 172.72 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10366,8 +10414,8 @@
 				)
 			)
 		)
-		(property "Value" "VCC"
-			(at 279.4 16.51 0)
+		(property "Value" "GND"
+			(at 172.72 168.91 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10377,7 +10425,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 279.4 21.59 0)
+			(at 172.72 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10388,7 +10436,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 279.4 21.59 0)
+			(at 172.72 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10398,8 +10446,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 279.4 21.59 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 172.72 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10410,12 +10458,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "9e1208a1-681b-42ca-b5df-1b2232c1319a")
+			(uuid "ba4c5d46-ca5a-41ec-83c9-2e13a6cc0147")
 		)
 		(instances
 			(project "SmartScale2-PCB"
 				(path "/eb8fe25f-2338-48bc-9e7d-778edca2e81f"
-					(reference "#PWR027")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -10702,6 +10750,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 172.72 160.02 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(uuid "161b442c-9aa0-4d6f-8911-383f4e506665")
+		(property "Reference" "R11"
+			(at 170.18 158.7499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 170.18 161.2899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 174.498 160.02 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 172.72 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "486ecbf7-8deb-4e29-8ddf-6a2a0d1a18be")
+		)
+		(pin "2"
+			(uuid "b53af9ab-f0bb-4725-8729-43f0377b04d2")
+		)
+		(instances
+			(project "SmartScale2-PCB"
+				(path "/eb8fe25f-2338-48bc-9e7d-778edca2e81f"
+					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 190.5 48.26 0)
 		(unit 1)
@@ -10785,7 +10915,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -10941,6 +11071,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 142.24 148.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2048f01b-ffc7-4f3a-aee7-756542e6047e")
+		(property "Reference" "#PWR0107"
+			(at 142.24 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 142.24 143.51 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 142.24 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.24 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 142.24 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1e5520b8-5bbe-472d-8531-97b8a5e386a1")
+		)
+		(instances
+			(project "SmartScale2-PCB"
+				(path "/eb8fe25f-2338-48bc-9e7d-778edca2e81f"
+					(reference "#PWR0107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 62.23 95.25 0)
 		(unit 1)
@@ -11024,7 +11232,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -11728,6 +11936,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 262.89 27.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "31c00ad8-6c35-4091-ba2a-8940e73c898f")
+		(property "Reference" "#PWR0110"
+			(at 262.89 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 262.89 22.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 262.89 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 262.89 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 262.89 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d07aa046-e904-42e8-8f85-b3aaafb80b7d")
+		)
+		(instances
+			(project "SmartScale2-PCB"
+				(path "/eb8fe25f-2338-48bc-9e7d-778edca2e81f"
+					(reference "#PWR0110")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 190.5 30.48 0)
 		(mirror y)
@@ -11882,84 +12168,6 @@
 			(project "SmartScale2-PCB"
 				(path "/eb8fe25f-2338-48bc-9e7d-778edca2e81f"
 					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 142.24 148.59 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "388a9b62-0d95-483a-b1ea-a6a272561d11")
-		(property "Reference" "#PWR016"
-			(at 142.24 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VCC"
-			(at 142.24 143.51 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 142.24 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 142.24 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 142.24 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d7c49196-5e5b-4902-a241-0b4062d75990")
-		)
-		(instances
-			(project "SmartScale2-PCB"
-				(path "/eb8fe25f-2338-48bc-9e7d-778edca2e81f"
-					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -12127,88 +12335,6 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 201.93 30.48 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4130ed23-64f4-432f-9590-05e0c2e8d960")
-		(property "Reference" "C14"
-			(at 198.12 29.2099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10uF"
-			(at 198.12 31.7499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 200.9648 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 201.93 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 201.93 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "49941535-e812-4f51-874e-2953526551a3")
-		)
-		(pin "2"
-			(uuid "7b9c2960-1a0f-445c-9fc1-90b9b26a811c")
-		)
-		(instances
-			(project "SmartScale2-PCB"
-				(path "/eb8fe25f-2338-48bc-9e7d-778edca2e81f"
-					(reference "C14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
 		(at 218.44 66.04 0)
 		(unit 1)
 		(body_style 1)
@@ -12362,164 +12488,6 @@
 			(project "SmartScale2-PCB"
 				(path "/eb8fe25f-2338-48bc-9e7d-778edca2e81f"
 					(reference "#PWR018")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "VCC_1")
-		(lib_id "power:VCC")
-		(at 234.95 20.32 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4a6e68d0-b743-42fe-932e-a63f46424f89")
-		(property "Reference" "#PWR022"
-			(at 234.95 24.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VCC"
-			(at 234.95 15.24 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 234.95 20.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 234.95 20.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 234.95 20.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b65ea418-d259-4866-ba5b-9cda2316a569")
-		)
-		(instances
-			(project "SmartScale2-PCB"
-				(path "/eb8fe25f-2338-48bc-9e7d-778edca2e81f"
-					(reference "#PWR022")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 129.54 121.92 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4e617a9c-4b38-4519-8bab-65a55efa595c")
-		(property "Reference" "#PWR010"
-			(at 133.35 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 125.73 121.9199 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 129.54 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 129.54 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 129.54 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5ca8c2eb-2bff-457b-a91f-e3ccfea2d413")
-		)
-		(instances
-			(project "SmartScale2-PCB"
-				(path "/eb8fe25f-2338-48bc-9e7d-778edca2e81f"
-					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -12683,37 +12651,40 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 34.29 45.72 90)
+		(at 137.16 74.93 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "5104ee13-3a20-4d6e-b174-80653eeb60c1")
+		(uuid "50da677f-7e4f-40e7-bdca-67c3ffc6dd77")
 		(property "Reference" "TP3"
-			(at 27.432 45.72 90)
+			(at 134.62 70.3579 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 20.574 45.72 90)
+			(at 134.62 72.8979 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 34.29 40.64 0)
+			(at 132.08 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12724,7 +12695,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 34.29 40.64 0)
+			(at 132.08 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12735,7 +12706,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 34.29 45.72 0)
+			(at 137.16 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12746,7 +12717,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "dbe1e4b1-2dca-435c-bfd6-ba41ec3e9a48")
+			(uuid "25ecffa7-0918-4c18-9cff-05d65b1883a9")
 		)
 		(instances
 			(project "SmartScale2-PCB"
@@ -13103,7 +13074,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -13336,84 +13307,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 62.23 22.86 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6dc09cf6-ab51-46f0-a2c6-5dee9f1af3dc")
-		(property "Reference" "#PWR01"
-			(at 62.23 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 62.23 17.78 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 62.23 22.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 62.23 22.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 62.23 22.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "be60d2bd-89bc-4b3f-93c9-95bc73fc3085")
-		)
-		(instances
-			(project "SmartScale2-PCB"
-				(path "/eb8fe25f-2338-48bc-9e7d-778edca2e81f"
-					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Regulator_Switching:AP63203WU")
 		(at 39.37 175.26 0)
 		(unit 1)
@@ -13584,85 +13477,6 @@
 		)
 	)
 	(symbol
-		(lib_name "VCC_1")
-		(lib_id "power:VCC")
-		(at 257.81 49.53 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "74a33867-a07d-4bef-9383-84afc2e31f82")
-		(property "Reference" "#PWR023"
-			(at 257.81 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VCC"
-			(at 257.81 44.45 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 257.81 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 257.81 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 257.81 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f2013450-b14e-478c-a234-995bbddeac75")
-		)
-		(instances
-			(project "SmartScale2-PCB"
-				(path "/eb8fe25f-2338-48bc-9e7d-778edca2e81f"
-					(reference "#PWR023")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Conn_ARM_JTAG_SWD_10")
 		(at 48.26 127 0)
 		(unit 1)
@@ -13671,7 +13485,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "74c43f32-410d-4747-9f43-ca6cf49a3fd6")
 		(property "Reference" "J1"
@@ -14163,41 +13977,41 @@
 		)
 	)
 	(symbol
-		(lib_name "VCC_1")
-		(lib_id "power:VCC")
-		(at 262.89 27.94 0)
+		(lib_id "Mechanical:Fiducial")
+		(at 250.19 176.53 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "860162df-c267-4adf-bded-d59b2a0d5e4f")
-		(property "Reference" "#PWR025"
-			(at 262.89 31.75 0)
-			(hide yes)
+		(uuid "8615799b-62f6-41a0-876c-35f699dccb16")
+		(property "Reference" "FID2"
+			(at 252.73 175.2599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "VCC"
-			(at 262.89 22.86 0)
+		(property "Value" "Fiducial"
+			(at 252.73 177.7999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 262.89 27.94 0)
+		(property "Footprint" "Fiducial:Fiducial_0.5mm_Mask1.5mm"
+			(at 250.19 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14208,7 +14022,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 262.89 27.94 0)
+			(at 250.19 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14218,8 +14032,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 262.89 27.94 0)
+		(property "Description" "Fiducial Marker"
+			(at 250.19 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14228,14 +14042,11 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "1"
-			(uuid "5c924e93-51bd-464b-ba0a-d10feecabc69")
 		)
 		(instances
 			(project "SmartScale2-PCB"
 				(path "/eb8fe25f-2338-48bc-9e7d-778edca2e81f"
-					(reference "#PWR025")
+					(reference "FID2")
 					(unit 1)
 				)
 			)
@@ -14314,6 +14125,84 @@
 			(project "SmartScale2-PCB"
 				(path "/eb8fe25f-2338-48bc-9e7d-778edca2e81f"
 					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 257.81 49.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8ab3ee18-4b52-407e-a4e9-e653c2565cf3")
+		(property "Reference" "#PWR0111"
+			(at 257.81 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 257.81 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 257.81 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 257.81 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 257.81 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6f123ff7-820f-4149-af68-6aab93b52cea")
+		)
+		(instances
+			(project "SmartScale2-PCB"
+				(path "/eb8fe25f-2338-48bc-9e7d-778edca2e81f"
+					(reference "#PWR0111")
 					(unit 1)
 				)
 			)
@@ -14827,13 +14716,89 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:Fiducial")
+		(at 250.19 170.18 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "972b6436-2233-4d13-bdc0-774e2a9045d6")
+		(property "Reference" "FID1"
+			(at 252.73 168.9099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fiducial"
+			(at 252.73 171.4499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Fiducial:Fiducial_0.5mm_Mask1.5mm"
+			(at 250.19 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 250.19 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Fiducial Marker"
+			(at 250.19 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "SmartScale2-PCB"
+				(path "/eb8fe25f-2338-48bc-9e7d-778edca2e81f"
+					(reference "FID1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
 		(at 152.4 48.26 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -15403,7 +15368,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -15473,6 +15438,84 @@
 			(project "SmartScale2-PCB"
 				(path "/eb8fe25f-2338-48bc-9e7d-778edca2e81f"
 					(reference "JP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 62.23 22.86 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "af00ac6e-098a-4bd8-949a-5ffb234127aa")
+		(property "Reference" "#PWR0112"
+			(at 62.23 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 62.23 17.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 62.23 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 62.23 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 62.23 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c16c0f26-9b04-4274-bcda-2c0d9d35be9d")
+		)
+		(instances
+			(project "SmartScale2-PCB"
+				(path "/eb8fe25f-2338-48bc-9e7d-778edca2e81f"
+					(reference "#PWR0112")
 					(unit 1)
 				)
 			)
@@ -15730,6 +15773,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 172.72 149.86 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(uuid "b8fd0e53-5380-41eb-ae28-11f131581840")
+		(property "Reference" "R10"
+			(at 170.18 148.5899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "33k"
+			(at 170.18 151.1299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 174.498 149.86 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 172.72 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "46eccecc-e3b9-40f4-af32-7988c3cac2b2")
+		)
+		(pin "2"
+			(uuid "ff94624b-56e9-49cb-98f5-42e97c319db4")
+		)
+		(instances
+			(project "SmartScale2-PCB"
+				(path "/eb8fe25f-2338-48bc-9e7d-778edca2e81f"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:USB_C_Receptacle_USB2.0_16P")
 		(at 209.55 127 0)
 		(unit 1)
@@ -15800,7 +15925,7 @@
 		(pin "B4"
 			(uuid "e101ae0c-c3e2-4583-934a-686a319fb3f3")
 		)
-		(pin "S1"
+		(pin "SH"
 			(uuid "303a7d8a-256c-4672-8f8c-62381a6c08d1")
 		)
 		(pin "B1"
@@ -16410,6 +16535,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 279.4 21.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d4b44c35-5b0b-4500-9b28-430cc6d5e85b")
+		(property "Reference" "#PWR0109"
+			(at 279.4 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 279.4 16.51 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 279.4 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 279.4 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 279.4 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "219815f7-3dbf-42bf-8c26-d81e1fd8dcc7")
+		)
+		(instances
+			(project "SmartScale2-PCB"
+				(path "/eb8fe25f-2338-48bc-9e7d-778edca2e81f"
+					(reference "#PWR0109")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 257.81 62.23 0)
 		(unit 1)
@@ -16482,6 +16685,164 @@
 			(project "SmartScale2-PCB"
 				(path "/eb8fe25f-2338-48bc-9e7d-778edca2e81f"
 					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+BATT")
+		(at 172.72 144.78 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e2bfffe3-83d9-487d-b3fc-1a4e719da2da")
+		(property "Reference" "#PWR032"
+			(at 172.72 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+BATT"
+			(at 172.72 139.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 172.72 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+BATT\""
+			(at 172.72 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "563bb47e-c29d-459b-862d-10eafafd124c")
+		)
+		(instances
+			(project "SmartScale2-PCB"
+				(path "/eb8fe25f-2338-48bc-9e7d-778edca2e81f"
+					(reference "#PWR032")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "+3V3_1")
+		(lib_id "power:+3V3")
+		(at 129.54 121.92 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e2e65b60-a305-400b-a01e-f6241ab173e7")
+		(property "Reference" "#PWR01"
+			(at 133.35 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 125.73 121.9199 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 129.54 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 129.54 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fa8b2003-07c4-4a6c-9a3b-a13210721488")
+		)
+		(instances
+			(project "SmartScale2-PCB"
+				(path "/eb8fe25f-2338-48bc-9e7d-778edca2e81f"
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -16641,6 +17002,160 @@
 			(project "SmartScale2-PCB"
 				(path "/eb8fe25f-2338-48bc-9e7d-778edca2e81f"
 					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 234.95 20.32 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ee07303a-6372-40cb-bc40-a71b91957c9f")
+		(property "Reference" "#PWR0108"
+			(at 234.95 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 234.95 15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 234.95 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 234.95 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 234.95 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bc0e308e-677d-4f9a-b67a-9c08d7a31635")
+		)
+		(instances
+			(project "SmartScale2-PCB"
+				(path "/eb8fe25f-2338-48bc-9e7d-778edca2e81f"
+					(reference "#PWR0108")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 34.29 43.18 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ef09dad6-d58b-42ff-8056-3dc741bda241")
+		(property "Reference" "TP2"
+			(at 27.432 43.18 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 20.574 43.18 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 34.29 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 34.29 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 34.29 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "96652b14-f386-472b-9657-e2534452e6be")
+		)
+		(instances
+			(project "SmartScale2-PCB"
+				(path "/eb8fe25f-2338-48bc-9e7d-778edca2e81f"
+					(reference "TP2")
 					(unit 1)
 				)
 			)

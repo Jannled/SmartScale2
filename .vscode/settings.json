@@ -1,0 +1,50 @@
+{
+    // Display formatting aid
+	"editor.rulers": [90, 120],
+	"editor.wordWrapColumn": 120,
+
+	"[git-commit]": {
+		"editor.rulers": [50]
+	},
+
+	"platformio-ide.intelliSenseEngine": "cpptools",
+
+    // Dictionary for the spelling correction
+	"cSpell.language": "en,de-DE",
+	"cSpell.words": [
+		"adafruit",
+		"ARDUHAL",
+		"bogde",
+		"DARDUINO",
+		"DETH",
+		"devkit",
+		"devkitc",
+		"devkitm",
+		"DKEY",
+		"DLED",
+		"elims",
+		"eslintcache",
+		"homeassistant",
+		"hotspot",
+		"Jannik",
+		"JTAG",
+		"Kincony",
+		"littlefs",
+		"loadcell",
+		"LOGI",
+		"mqtt",
+		"nodemcu",
+		"pico",
+		"pioenv",
+		"pycache",
+		"qwiic",
+		"rjwats",
+		"Schmöle",
+		"Sveltekit",
+		"tabler",
+		"teleplot",
+		"theelims",
+		"UART",
+		"Zigbee"
+	]
+}

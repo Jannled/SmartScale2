@@ -1,12 +1,10 @@
 .pio
 .clang_complete
 .gcc-flags.json
-*Thumbs.db
 /data/www
 /interface/build
 /interface/node_modules
 /interface/.eslintcache
-.vscode
 node_modules
 /releases
 /src/certs
@@ -19,11 +17,18 @@ ssl_certs/cacert.pem
 /logs
 .aid
 /scripts/__pycache__
-.DS_Store
-*.bak
 
 compile_commands.json
 .clangd
 
-# KiCad backups
+c_cpp_properties.json
+launch.json
+
+## OS files
+*Thumbs.db
+.DS_Store
+*.bak
+
+# KiCad
 **/*-backups/*.zip
+*.lck
