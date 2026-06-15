@@ -10145,10 +10145,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "01581cd7-02f7-4ece-8263-3dd915d59914")
 		(property "Reference" "U6"
-			(at 149.4633 72.39 0)
+			(at 149.098 70.612 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10158,8 +10157,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" ""
-			(at 147.32 81.28 0)
+		(property "Value" "TTP223-BA6"
+			(at 155.194 72.898 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11723,7 +11722,7 @@
 				)
 			)
 		)
-		(property "Value" "L"
+		(property "Value" "3.3uH"
 			(at 184.15 21.59 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16011,7 +16010,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_Sunlord_SWPA5040S"
+		(property "Footprint" "Inductor_SMD:L_Taiyo-Yuden_NR-60xx"
 			(at 66.04 171.45 0)
 			(hide yes)
 			(show_name no)
