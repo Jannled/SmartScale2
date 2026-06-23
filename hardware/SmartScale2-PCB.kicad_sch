@@ -7258,7 +7258,7 @@
 		(uuid "252affe1-681f-4470-8385-d240365a56e2")
 	)
 	(junction
-		(at 172.72 154.94)
+		(at 171.45 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2ea8f237-0e44-4e3c-9d70-7b914d5a2cf1")
@@ -8467,7 +8467,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 154.94) (xy 172.72 156.21)
+			(xy 171.45 144.78) (xy 171.45 146.05)
 		)
 		(stroke
 			(width 0)
@@ -8577,7 +8577,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 154.94) (xy 182.88 154.94)
+			(xy 171.45 144.78) (xy 181.61 144.78)
 		)
 		(stroke
 			(width 0)
@@ -9577,7 +9577,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 144.78) (xy 172.72 146.05)
+			(xy 171.45 134.62) (xy 171.45 135.89)
 		)
 		(stroke
 			(width 0)
@@ -9587,7 +9587,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 153.67) (xy 172.72 154.94)
+			(xy 171.45 143.51) (xy 171.45 144.78)
 		)
 		(stroke
 			(width 0)
@@ -9696,7 +9696,7 @@
 		(uuid "1ce6b827-d234-465e-a2c1-933a7ca2e521")
 	)
 	(label "VBat_Div"
-		(at 182.88 154.94 180)
+		(at 181.61 144.78 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10392,7 +10392,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 172.72 163.83 0)
+		(at 171.45 153.67 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10403,7 +10403,7 @@
 		(fields_autoplaced yes)
 		(uuid "0911fc1a-9b0e-4699-9afc-82c02ca04b8d")
 		(property "Reference" "#PWR022"
-			(at 172.72 170.18 0)
+			(at 171.45 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10414,7 +10414,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 172.72 168.91 0)
+			(at 171.45 158.75 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10424,7 +10424,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 172.72 163.83 0)
+			(at 171.45 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10435,7 +10435,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 172.72 163.83 0)
+			(at 171.45 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10446,7 +10446,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 172.72 163.83 0)
+			(at 171.45 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10750,7 +10750,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 172.72 160.02 0)
+		(at 171.45 149.86 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -10761,7 +10761,7 @@
 		(dnp yes)
 		(uuid "161b442c-9aa0-4d6f-8911-383f4e506665")
 		(property "Reference" "R11"
-			(at 170.18 158.7499 0)
+			(at 168.91 148.5899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10772,7 +10772,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 170.18 161.2899 0)
+			(at 168.91 151.1299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10783,7 +10783,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 174.498 160.02 90)
+			(at 173.228 149.86 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10794,7 +10794,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 172.72 160.02 0)
+			(at 171.45 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10805,7 +10805,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 172.72 160.02 0)
+			(at 171.45 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15313,7 +15313,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_ZH_B2B-ZR_1x02_P1.50mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_PicoBlade_53047-0210_1x02_P1.25mm_Vertical"
 			(at 149.86 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -15712,7 +15712,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "D_Zener"
+		(property "Value" "BZT52C12"
 			(at 237.49 107.9499 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15773,7 +15773,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 172.72 149.86 0)
+		(at 171.45 139.7 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -15784,7 +15784,7 @@
 		(dnp yes)
 		(uuid "b8fd0e53-5380-41eb-ae28-11f131581840")
 		(property "Reference" "R10"
-			(at 170.18 148.5899 0)
+			(at 168.91 138.4299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15795,7 +15795,7 @@
 			)
 		)
 		(property "Value" "33k"
-			(at 170.18 151.1299 0)
+			(at 168.91 140.9699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15806,7 +15806,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 174.498 149.86 90)
+			(at 173.228 139.7 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15817,7 +15817,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 172.72 149.86 0)
+			(at 171.45 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15828,7 +15828,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 172.72 149.86 0)
+			(at 171.45 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16691,7 +16691,7 @@
 	)
 	(symbol
 		(lib_id "power:+BATT")
-		(at 172.72 144.78 0)
+		(at 171.45 134.62 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16702,7 +16702,7 @@
 		(fields_autoplaced yes)
 		(uuid "e2bfffe3-83d9-487d-b3fc-1a4e719da2da")
 		(property "Reference" "#PWR032"
-			(at 172.72 148.59 0)
+			(at 171.45 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16713,7 +16713,7 @@
 			)
 		)
 		(property "Value" "+BATT"
-			(at 172.72 139.7 0)
+			(at 171.45 129.54 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16723,7 +16723,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 172.72 144.78 0)
+			(at 171.45 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16734,7 +16734,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 172.72 144.78 0)
+			(at 171.45 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16745,7 +16745,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 172.72 144.78 0)
+			(at 171.45 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17182,7 +17182,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "12k"
+		(property "Value" "10k"
 			(at 93.218 123.063 0)
 			(show_name no)
 			(do_not_autoplace no)

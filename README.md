@@ -7,7 +7,7 @@ This project is powered by the amazing [ESP32 SvelteKit](https://github.com/thee
 - Automatic hotspot with captive portal if no WiFi is found
 - MQTT with auto discovery for HomeAssistant
 
-Be sure to select ESP32-C6 as the target in PlatformIO when using the provided PCBd
+Be sure to select ESP32-C6 as the target in PlatformIO when using the provided PCB.
 
 ## Hardware Features
 - HX711 as the loadcell measurement ic with additional filtering

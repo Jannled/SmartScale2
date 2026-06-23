@@ -32,3 +32,4 @@ launch.json
 # KiCad
 **/*-backups/*.zip
 *.lck
+.history/
