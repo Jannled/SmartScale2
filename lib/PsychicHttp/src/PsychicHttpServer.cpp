@@ -16,7 +16,7 @@ PsychicHttpServer::PsychicHttpServer() :
 
   defaultEndpoint = new PsychicEndpoint(this, HTTP_GET, "");
   onNotFound(PsychicHttpServer::defaultNotFoundHandler);
-  
+
   //for a regular server
   config = HTTPD_DEFAULT_CONFIG();
   config.open_fn = PsychicHttpServer::openCallback;
@@ -72,7 +72,7 @@ esp_err_t PsychicHttpServer::_start()
   // Register handler
   ret = httpd_register_err_handler(server, HTTPD_404_NOT_FOUND, PsychicHttpServer::notFoundHandler);
   if (ret != ESP_OK)
-    ESP_LOGE(PH_TAG, "Add 404 handler failed (%s)", esp_err_to_name(ret)); 
+    ESP_LOGE(PH_TAG, "Add 404 handler failed (%s)", esp_err_to_name(ret));
 
   return ret;
 }
@@ -83,7 +83,7 @@ esp_err_t PsychicHttpServer::_startServer() {
 
 void PsychicHttpServer::stop()
 {
-  httpd_stop(this->server);  
+  httpd_stop(this->server);
 }
 
 PsychicHandler& PsychicHttpServer::addHandler(PsychicHandler* handler){
@@ -128,7 +128,7 @@ PsychicEndpoint* PsychicHttpServer::on(const char* uri, http_method method, Psyc
     .is_websocket = handler->isWebSocket(),
     .supported_subprotocol = handler->getSubprotocol()
   };
-  
+
   // Register endpoint with ESP-IDF server
   esp_err_t ret = httpd_register_uri_handler(this->server, &my_uri);
   if (ret != ESP_OK)
@@ -206,6 +206,7 @@ esp_err_t PsychicHttpServer::notFoundHandler(httpd_req_t *req, httpd_err_code_t 
 
 esp_err_t PsychicHttpServer::defaultNotFoundHandler(PsychicRequest *request)
 {
+  ESP_LOGD(PH_TAG, "404 File not found");
   request->reply(404, "text/html", "That URI does not exist.");
 
   return ESP_OK;

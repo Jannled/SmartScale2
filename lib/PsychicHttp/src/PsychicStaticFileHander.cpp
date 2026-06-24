@@ -157,6 +157,8 @@ uint8_t PsychicStaticFileHandler::_countBits(const uint8_t value) const
 
 esp_err_t PsychicStaticFileHandler::handleRequest(PsychicRequest *request)
 {
+	ESP_LOGD(PH_TAG, "HTTP Request");
+
     if (_file == true)
     {
         // is it not modified?
