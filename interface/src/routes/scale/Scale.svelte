@@ -68,26 +68,15 @@
 	{/snippet}
 
 	{#snippet title()}
-		<span>Light State</span>
+		<span>Scale State</span>
 	{/snippet}
 	<div class="w-full">
 		<h1 class="text-xl font-semibold">Weight</h1>
-		<div class="alert alert-info my-2 shadow-lg">
-			<Info class="h-6 w-6 shrink-0 stroke-current" />
-			<span>The form below controls the LED via the RESTful service exposed by the ESP device.</span
-			>
-		</div>
-		<div class="flex flex-row flex-wrap justify-between gap-x-2">
-			<div class="fieldset w-52">
-				<label class="label cursor-pointer">
-					<span class="mr-4 text-base">Light State?</span>
-					<input type="checkbox" bind:checked={lightOn} class="checkbox checkbox-primary" />
-				</label>
-			</div>
-			<div class="grow"></div>
-			<button class="btn btn-primary inline-flex items-center" onclick={tare}
-				><Save class="mr-2 h-5 w-5" /><span>Tare</span></button
-			>
-		</div>
+
+		<span class="block text-5xl font-bold text-right">{scaleState.weight.toFixed(1)}g</span>
+		<div class="grow"></div>
+		<button class="btn btn-primary inline-flex items-center" onclick={tare}
+			><Save class="mr-2 h-5 w-5" /><span>Tare</span></button
+		>
 	</div>
 </SettingsCard>

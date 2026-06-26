@@ -1,5 +1,8 @@
 # SmartScale 2
-Modification of a kitchen scale with an ESP32 and a HX711 on a custom PCB.
+Modification of a kitchen scale with an ESP32 and a HX711 on a custom PCB. But you can use
+this project for other usecases as well, such as measuring the weight of your bee hive, to
+measure things you put in your inventory system, to track the weight of the food bowl for
+your pets etc.
 
 This project is powered by the amazing [ESP32 SvelteKit](https://github.com/theelims/ESP32-sveltekit) framework.
 
@@ -7,7 +10,11 @@ This project is powered by the amazing [ESP32 SvelteKit](https://github.com/thee
 - Automatic hotspot with captive portal if no WiFi is found
 - MQTT with auto discovery for HomeAssistant
 
-Be sure to select ESP32-C6 as the target in PlatformIO when using the provided PCB.
+> [!NOTE]
+> Be sure to select `env:esp32-c6-devkit` as the PlatformIO project environment/target
+> when using the provided PCB.
+
+
 
 ## Hardware Features
 - HX711 as the loadcell measurement ic with additional filtering
@@ -16,7 +23,7 @@ Be sure to select ESP32-C6 as the target in PlatformIO when using the provided P
 - Better power efficiency due to buck switching regulator instead of LDO
 - WiFi, Bluetooth and Zigbee compatible due to the ESP32-C6
 - touch ic for one button
-- easily expandable with qwiic connector (I2C)
+- easily expandable with qwiic connector (I²C)
 - debug with the UART port or the JTAG header
 - ESD protection for the USB connector
 

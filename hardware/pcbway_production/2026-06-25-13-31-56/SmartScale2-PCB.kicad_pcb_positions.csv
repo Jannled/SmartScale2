@@ -29,6 +29,8 @@
 65.675,-75.855,-90.0,top,JP3,,,SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm,Jumper_2_Small_Open,tht
 60.595,-62.52,180.0,top,JP4,,,SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm,Jumper_2_Small_Bridged,tht
 60.595,-65.06,180.0,top,JP5,,,SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm,Jumper_2_Small_Bridged,tht
+42.942,-66.584,0.0,bottom,JP6,,,SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm,Jumper_2_Small_Open,tht
+42.942,-70.394,0.0,bottom,JP7,,,SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm,Jumper_2_Small_Open,tht
 71.009,-75.22,0.0,top,L1,,,L_Taiyo-Yuden_NR-60xx,3.9uH,smt
 45.355,-52.959,-90.0,top,L2,,,L_0805_2012Metric_Pad1.05x1.20mm_HandSolder,3.3uH,smt
 48.8,-54.549,180.0,top,Q1,,,SOT-23,MMBT4403,smt

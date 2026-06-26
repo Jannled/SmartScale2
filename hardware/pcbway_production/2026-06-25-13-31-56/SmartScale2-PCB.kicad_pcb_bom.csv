@@ -11,6 +11,7 @@ J2,1,USB_C_Receptacle_USB2.0_16P,USB_C_Receptacle_G-Switch_GT-USB-7010ASV,,,,smt
 J3,1,Conn_01x02,Molex_PicoBlade_53047-0210_1x02_P1.25mm_Vertical,,,,tht,"Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",connector/Molex,,
 J5,1,Conn_01x03_MountingPin,JST_SH_SM03B-SRSS-TB_1x03-1MP_P1.00mm_Horizontal,,,,smt,"Generic connectable mounting pin connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)",,,
 J6,1,Conn_01x04_MountingPin,JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal,,,,smt,"Generic connectable mounting pin connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)",,,
+"JP6, JP7",2,Jumper_2_Small_Open,SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm,,,,tht,"Jumper, 2-pole, small symbol, open",,,
 L1,1,3.9uH,L_Taiyo-Yuden_NR-60xx,,,,smt,,,,
 L2,1,3.3uH,L_0805_2012Metric_Pad1.05x1.20mm_HandSolder,,,,smt,Inductor,,,
 Q1,1,MMBT4403,SOT-23,,,,smt,"PNP transistor, base/emitter/collector",,1=B 2=E 3=C,PNP
