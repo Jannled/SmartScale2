@@ -28,6 +28,11 @@ This project is powered by the amazing [ESP32 SvelteKit](https://github.com/thee
 - ESD protection for the USB connector
 
 > [!IMPORTANT]
-> The **qwiic and UART** port (J5, J6) have no level shifting and are therefore **not 5V tolerant** (3.3V only)!
+> The **qwiic and UART** port (J5, J6) have no level shifting and are therefore
+> **not 5V tolerant** (3.3V only)!
+>
+> Also the **battery** connector has **no reverse polarity protection**. Check the pinout of your
+> Molex PicoBlade connector (sometimes called JST 1.25 by sketchy online stores) before
+> you connect the battery!
 
 You can find the [schematic here](/hardware/SmartScale2-Schematic.pdf)
