@@ -11,10 +11,8 @@ This project is powered by the amazing [ESP32 SvelteKit](https://github.com/thee
 - MQTT with auto discovery for HomeAssistant
 
 > [!NOTE]
-> Be sure to select `env:esp32-c6-devkit` as the PlatformIO project environment/target
+> Be sure to select `env:esp32-c6-wroom-1-n4` as the PlatformIO project environment/target
 > when using the provided PCB.
-
-
 
 ## Hardware Features
 - HX711 as the loadcell measurement ic with additional filtering

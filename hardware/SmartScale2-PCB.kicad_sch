@@ -10266,7 +10266,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "ESP32-C6-WROOM-1"
+		(property "Value" "ESP32-C6-WROOM-1-N4"
 			(at 64.3733 27.94 0)
 			(show_name no)
 			(do_not_autoplace no)

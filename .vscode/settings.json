@@ -26,6 +26,7 @@
 		"DLED",
 		"elims",
 		"eslintcache",
+		"hivemq",
 		"homeassistant",
 		"hotspot",
 		"Jannik",
@@ -57,6 +58,7 @@
 		"theelims",
 		"UART",
 		"usecases",
+		"wroom",
 		"Zigbee"
 	]
 }

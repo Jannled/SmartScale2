@@ -15,7 +15,9 @@
 #include <ESP32SvelteKit.h>
 #include <PsychicHttpServer.h>
 
+#ifdef ENABLE_DISPLAY
 #include <U8g2lib.h>
+#endif
 
 #include "Service/ScaleService.hpp"
 #include "Service/ScaleMqttSettingsService.hpp"
@@ -32,12 +34,14 @@ const long LOADCELL_OFFSET = 50682624;
 const long LOADCELL_DIVIDER = 5895655;
 HX711 loadcell = HX711();
 
+#ifdef ENABLE_DISPLAY
 #define OLED_DISPLAY_SDA 22
 #define OLED_DISPLAY_SCL 23
 #define DISPLAY_HEADER_HEIGHT 10
 U8G2_SSD1306_128X64_NONAME_2_HW_I2C u8g2(
 	U8G2_R0, 255, OLED_DISPLAY_SCL, OLED_DISPLAY_SDA // rotation, reset, scl, sda
 );
+#endif
 
 ScaleMqttSettingsService scaleMqttSettingsService = ScaleMqttSettingsService(
 	&server,
@@ -63,7 +67,9 @@ void setup()
 	Serial.println(loadcell.get_units(10), 2);
 
 	// Init the display
+	#ifdef ENABLE_DISPLAY
 	u8g2.begin();
+	#endif
 
 	// start ESP32-SvelteKit
 	esp32sveltekit.begin();
@@ -73,6 +79,7 @@ void setup()
 	scaleMqttSettingsService.begin();
 }
 
+#ifdef ENABLE_DISPLAY
 void updateOLED(float reading)
 {
 	u8g2.firstPage();
@@ -141,6 +148,7 @@ void updateOLED(float reading)
 		);
 	} while (u8g2.nextPage());
 }
+#endif
 
 void loop()
 {
@@ -161,7 +169,10 @@ void loop()
 	}, "loop");
 
 	// Update the OLED display
+	#ifdef ENABLE_DISPLAY
 	updateOLED(counter);
+	#endif
+
 	counter++;
 
 	// No need to sample at max speed
