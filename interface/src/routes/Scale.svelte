@@ -1,13 +1,11 @@
 <script lang="ts">
-	import { onMount, onDestroy } from 'svelte';
+	import { onMount } from 'svelte';
 	import { user } from '$lib/stores/user';
 	import { page } from '$app/state';
 	import { notifications } from '$lib/components/toasts/notifications';
 	import SettingsCard from '$lib/components/SettingsCard.svelte';
 	import Light from '~icons/tabler/bulb';
-	import Info from '~icons/tabler/info-circle';
 	import Save from '~icons/tabler/device-floppy';
-	import Reload from '~icons/tabler/reload';
 	import { socket } from '$lib/stores/socket';
 	import type { ScaleState } from '$lib/types/models';
 
@@ -25,7 +23,7 @@
 				}
 			});
 			const json_resp = await response.json();
-			scaleState.weight = json_resp['weight']
+			scaleState.weight = json_resp['weight'];
 		} catch (error) {
 			console.error('Error:', error);
 		}
@@ -47,12 +45,10 @@
 					Authorization: page.data.features.security ? 'Bearer ' + $user.bearer_token : 'Basic',
 					'Content-Type': 'application/json'
 				},
-				body: JSON.stringify({ /* TODO */ })
+				body: JSON.stringify({})
 			});
 			if (response.status == 200) {
 				notifications.success('Tare send.', 3000);
-				const json_resp = await response.json();
-				// TODO
 			} else {
 				notifications.error('User not authorized.', 3000);
 			}

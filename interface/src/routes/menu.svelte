@@ -49,7 +49,7 @@
 		{
 			title: 'Scale',
 			icon: Control,
-			href: '/scale',
+			href: '/',
 			feature: true
 		},
 		{
