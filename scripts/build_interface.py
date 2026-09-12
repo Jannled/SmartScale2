@@ -60,6 +60,7 @@ def should_regenerate_output_file():
         f"Newest file: {datetime.fromtimestamp(last_source_change)}, output file: {datetime.fromtimestamp(last_build)}"
     )
 
+    print(f"Rebuild necessary: {last_build < last_source_change}")
     return last_build < last_source_change
 
 

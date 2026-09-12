@@ -7219,7 +7219,7 @@
 	)
 	(text "https://cdn.sparkfun.com/assets/learn_tutorials/5/4/6/SparkFun_HX711_Load_Cell.pdf"
 		(exclude_from_sim no)
-		(at 225.806 80.264 0)
+		(at 233.934 81.534 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7234,7 +7234,7 @@
 		(uuid "07eb6df8-b5ea-49ff-990b-21e49a4dae05")
 	)
 	(junction
-		(at 137.16 78.74)
+		(at 133.35 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0d99d2f6-66ef-46eb-90db-df02c04bb3fb")
@@ -7312,7 +7312,7 @@
 		(uuid "4d57d3aa-d62c-4512-b2e0-64e33684a1d1")
 	)
 	(junction
-		(at 135.89 83.82)
+		(at 132.08 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "56044a4d-d44c-4789-9fc9-77cd163d7d14")
@@ -7366,7 +7366,7 @@
 		(uuid "8bc6ed6d-0a14-40be-a676-09af61fe74a5")
 	)
 	(junction
-		(at 147.32 93.98)
+		(at 143.51 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "927d3715-7de8-4d26-a34a-322e2601cb23")
@@ -7430,6 +7430,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d5dd7874-e3fc-4871-af32-c581f577fec1")
+	)
+	(junction
+		(at 160.02 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d73bdfbc-f1f0-4cc2-bc1d-4e6900d61a33")
 	)
 	(junction
 		(at 213.36 50.8)
@@ -7517,7 +7523,17 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 93.98) (xy 147.32 90.17)
+			(xy 158.75 85.09) (xy 160.02 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "069064a7-b0c1-4eca-b9a3-4975e81a0153")
+	)
+	(wire
+		(pts
+			(xy 143.51 95.25) (xy 143.51 91.44)
 		)
 		(stroke
 			(width 0)
@@ -7687,7 +7703,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 71.12) (xy 147.32 72.39)
+			(xy 143.51 72.39) (xy 143.51 73.66)
 		)
 		(stroke
 			(width 0)
@@ -7947,7 +7963,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 95.25) (xy 147.32 93.98)
+			(xy 143.51 96.52) (xy 143.51 95.25)
 		)
 		(stroke
 			(width 0)
@@ -8057,7 +8073,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 78.74) (xy 137.16 78.74)
+			(xy 127 80.01) (xy 133.35 80.01)
 		)
 		(stroke
 			(width 0)
@@ -8087,7 +8103,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 83.82) (xy 135.89 83.82)
+			(xy 130.81 85.09) (xy 132.08 85.09)
 		)
 		(stroke
 			(width 0)
@@ -8277,16 +8293,6 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 78.74) (xy 158.75 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5f33d1bf-21f4-4923-a5b9-268686aa85c7")
-	)
-	(wire
-		(pts
 			(xy 102.87 38.1) (xy 102.87 44.45)
 		)
 		(stroke
@@ -8457,7 +8463,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 85.09) (xy 135.89 83.82)
+			(xy 132.08 86.36) (xy 132.08 85.09)
 		)
 		(stroke
 			(width 0)
@@ -8514,16 +8520,6 @@
 			(type default)
 		)
 		(uuid "73b089b1-4552-43f3-9991-e81116f59a29")
-	)
-	(wire
-		(pts
-			(xy 157.48 78.74) (xy 158.75 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "741d28b5-8bda-4a83-993b-705741e8168a")
 	)
 	(wire
 		(pts
@@ -8584,16 +8580,6 @@
 			(type default)
 		)
 		(uuid "7f10ba79-74fc-4b0f-8e1a-03a9e8f419f6")
-	)
-	(wire
-		(pts
-			(xy 158.75 83.82) (xy 157.48 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "80874acd-5a0b-48cc-83ed-0151f2bcb791")
 	)
 	(wire
 		(pts
@@ -8807,6 +8793,16 @@
 	)
 	(wire
 		(pts
+			(xy 160.02 85.09) (xy 160.02 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9859536d-8221-4e0a-856f-d63f08eaa238")
+	)
+	(wire
+		(pts
 			(xy 93.98 167.64) (xy 96.52 167.64)
 		)
 		(stroke
@@ -8917,7 +8913,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 74.93) (xy 137.16 78.74)
+			(xy 133.35 76.2) (xy 133.35 80.01)
 		)
 		(stroke
 			(width 0)
@@ -8937,7 +8933,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 83.82) (xy 137.16 83.82)
+			(xy 132.08 85.09) (xy 133.35 85.09)
 		)
 		(stroke
 			(width 0)
@@ -8954,6 +8950,16 @@
 			(type default)
 		)
 		(uuid "a3d2e6c5-e872-4ded-adfb-804f15a88e5f")
+	)
+	(wire
+		(pts
+			(xy 160.02 80.01) (xy 158.75 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a623b5f0-8578-463c-84cb-e9efd6636a71")
 	)
 	(wire
 		(pts
@@ -9137,7 +9143,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 93.98) (xy 147.32 93.98)
+			(xy 132.08 95.25) (xy 143.51 95.25)
 		)
 		(stroke
 			(width 0)
@@ -9287,7 +9293,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 92.71) (xy 135.89 93.98)
+			(xy 132.08 93.98) (xy 132.08 95.25)
 		)
 		(stroke
 			(width 0)
@@ -9354,6 +9360,16 @@
 			(type default)
 		)
 		(uuid "dc29835b-c216-49c6-9c42-65594345c529")
+	)
+	(wire
+		(pts
+			(xy 160.02 72.39) (xy 160.02 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dde39972-b93a-44e9-ba56-d102a0157446")
 	)
 	(wire
 		(pts
@@ -9776,7 +9792,7 @@
 		(uuid "47225f52-fce9-4612-bcde-bbf3b97436a8")
 	)
 	(label "Touch"
-		(at 130.81 78.74 0)
+		(at 127 80.01 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10137,7 +10153,7 @@
 	)
 	(symbol
 		(lib_id "_custom:TTP223-BA6")
-		(at 147.32 81.28 0)
+		(at 143.51 82.55 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10147,7 +10163,7 @@
 		(dnp no)
 		(uuid "01581cd7-02f7-4ece-8263-3dd915d59914")
 		(property "Reference" "U6"
-			(at 149.098 70.612 0)
+			(at 145.288 71.882 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10158,7 +10174,7 @@
 			)
 		)
 		(property "Value" "TTP223-BA6"
-			(at 155.194 72.898 0)
+			(at 151.384 74.168 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10168,7 +10184,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-			(at 164.338 89.662 0)
+			(at 160.528 90.932 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10179,7 +10195,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 147.32 81.28 0)
+			(at 143.51 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10190,7 +10206,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 147.32 81.28 0)
+			(at 143.51 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10594,7 +10610,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 147.32 71.12 0)
+		(at 143.51 72.39 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10605,7 +10621,7 @@
 		(fields_autoplaced yes)
 		(uuid "10658a87-d688-4c06-a6b5-950fe87c4cde")
 		(property "Reference" "#PWR0106"
-			(at 147.32 74.93 0)
+			(at 143.51 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10616,7 +10632,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 147.32 66.04 0)
+			(at 143.51 67.31 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10626,7 +10642,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 147.32 71.12 0)
+			(at 143.51 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10637,7 +10653,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 147.32 71.12 0)
+			(at 143.51 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10648,7 +10664,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 147.32 71.12 0)
+			(at 143.51 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12252,7 +12268,7 @@
 	)
 	(symbol
 		(lib_id "SmartScale-rescue:C-Device")
-		(at 135.89 88.9 0)
+		(at 132.08 90.17 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -12263,7 +12279,7 @@
 		(dnp no)
 		(uuid "4042628d-e5d7-4d69-a0ce-08e098b462d3")
 		(property "Reference" "C13"
-			(at 132.969 87.7316 0)
+			(at 129.159 89.0016 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12274,7 +12290,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 132.969 90.043 0)
+			(at 129.159 91.313 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12285,7 +12301,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 134.9248 92.71 0)
+			(at 131.1148 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12296,7 +12312,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 135.89 88.9 0)
+			(at 132.08 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12307,7 +12323,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 135.89 88.9 0)
+			(at 132.08 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12650,7 +12666,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 137.16 74.93 0)
+		(at 133.35 76.2 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -12661,7 +12677,7 @@
 		(dnp no)
 		(uuid "50da677f-7e4f-40e7-bdca-67c3ffc6dd77")
 		(property "Reference" "TP3"
-			(at 134.62 70.3579 0)
+			(at 130.81 71.6279 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12672,7 +12688,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 134.62 72.8979 0)
+			(at 130.81 74.1679 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12683,7 +12699,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 132.08 74.93 0)
+			(at 128.27 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12694,7 +12710,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 132.08 74.93 0)
+			(at 128.27 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12705,7 +12721,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 137.16 74.93 0)
+			(at 133.35 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12722,6 +12738,85 @@
 			(project "SmartScale2-PCB"
 				(path "/eb8fe25f-2338-48bc-9e7d-778edca2e81f"
 					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:Jumper_2_Small_Open")
+		(at 156.21 80.01 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "542d00ba-e03b-497a-9b35-55c2563764d1")
+		(property "Reference" "JP6"
+			(at 162.306 76.708 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Jumper_2_Small_Open"
+			(at 170.688 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+			(at 156.21 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Jumper, 2-pole, small symbol, open"
+			(at 156.21 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0dcab79a-a80f-49a7-be8d-d5743ce85ccf")
+		)
+		(pin "2"
+			(uuid "496fc955-d34f-46a4-afbd-e50b6e10aa08")
+		)
+		(instances
+			(project "SmartScale2-PCB"
+				(path "/eb8fe25f-2338-48bc-9e7d-778edca2e81f"
+					(reference "JP6")
 					(unit 1)
 				)
 			)
@@ -12991,7 +13086,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 147.32 95.25 0)
+		(at 143.51 96.52 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13002,7 +13097,7 @@
 		(fields_autoplaced yes)
 		(uuid "5f28cdbe-46b7-4b1b-aced-fdf55e3a6d1e")
 		(property "Reference" "#PWR029"
-			(at 147.32 101.6 0)
+			(at 143.51 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13013,7 +13108,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 147.32 100.33 0)
+			(at 143.51 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13023,7 +13118,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 147.32 95.25 0)
+			(at 143.51 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13034,7 +13129,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 147.32 95.25 0)
+			(at 143.51 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13045,7 +13140,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 147.32 95.25 0)
+			(at 143.51 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13970,6 +14065,85 @@
 			(project "SmartScale2-PCB"
 				(path "/eb8fe25f-2338-48bc-9e7d-778edca2e81f"
 					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:Jumper_2_Small_Open")
+		(at 156.21 85.09 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "84b792cb-1162-461e-87f6-995d6cb4e0e5")
+		(property "Reference" "JP7"
+			(at 162.306 81.788 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Jumper_2_Small_Open"
+			(at 170.688 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+			(at 156.21 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Jumper, 2-pole, small symbol, open"
+			(at 156.21 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "810a7177-cf19-44b7-8501-d1d018ef527a")
+		)
+		(pin "2"
+			(uuid "de6d97ef-44a9-4cba-955e-f7a75db6ba02")
+		)
+		(instances
+			(project "SmartScale2-PCB"
+				(path "/eb8fe25f-2338-48bc-9e7d-778edca2e81f"
+					(reference "JP7")
 					(unit 1)
 				)
 			)
@@ -14955,7 +15129,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 134.62 83.82 90)
+		(at 130.81 85.09 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14965,7 +15139,7 @@
 		(dnp no)
 		(uuid "9cd39851-01a4-4f9c-a7bd-d9de6f04f6c1")
 		(property "Reference" "TP1"
-			(at 127.762 83.82 90)
+			(at 123.952 85.09 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14975,7 +15149,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 131.318 81.28 90)
+			(at 127.508 82.55 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14985,7 +15159,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm"
-			(at 134.62 78.74 0)
+			(at 130.81 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14996,7 +15170,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 134.62 78.74 0)
+			(at 130.81 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15007,7 +15181,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 134.62 83.82 0)
+			(at 130.81 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16684,6 +16858,84 @@
 			(project "SmartScale2-PCB"
 				(path "/eb8fe25f-2338-48bc-9e7d-778edca2e81f"
 					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 160.02 72.39 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "de29df49-0f51-45ac-8513-ca0b03591a75")
+		(property "Reference" "#PWR0113"
+			(at 160.02 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 160.02 67.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 160.02 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "627b061a-57f5-499d-8a03-d20642ed7ec7")
+		)
+		(instances
+			(project "SmartScale2-PCB"
+				(path "/eb8fe25f-2338-48bc-9e7d-778edca2e81f"
+					(reference "#PWR0113")
 					(unit 1)
 				)
 			)
