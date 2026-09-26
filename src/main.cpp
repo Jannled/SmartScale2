@@ -28,10 +28,10 @@ PsychicHttpServer server;
 
 ESP32SvelteKit esp32sveltekit(&server, 70);
 
-const int LOADCELL_DOUT_PIN = 2;
-const int LOADCELL_SCK_PIN = 3;
-const long LOADCELL_OFFSET = 50682624;
-const long LOADCELL_DIVIDER = 5895655;
+const int LOADCELL_DOUT_PIN = 10;
+const int LOADCELL_SCK_PIN = 11;
+const long LOADCELL_OFFSET = 570000;//50682624;
+const long LOADCELL_DIVIDER = 1; //5895655;
 HX711 loadcell = HX711();
 
 #ifdef ENABLE_DISPLAY
@@ -90,7 +90,7 @@ void updateOLED(float reading)
 		if(reading < 10000)
 			snprintf(text, sizeof(text), "%ldg", (int) reading);
 		else
-			snprintf(text, sizeof(text), "%.1fkg", (float) reading/1000);
+			snprintf(text, sizeof(text), "%.1fk", (float) reading/1000);
 
 		// https://github.com/olikraus/u8g2/wiki/fnticons#siji-pixel-icons
 		u8g2.setFont(u8g2_font_siji_t_6x10); // 11px
@@ -170,7 +170,7 @@ void loop()
 
 	// Update the OLED display
 	#ifdef ENABLE_DISPLAY
-	updateOLED(counter);
+	updateOLED(reading);
 	#endif
 
 	counter++;
