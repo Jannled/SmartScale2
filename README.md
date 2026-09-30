@@ -4,6 +4,8 @@ this project for other usecases as well, such as measuring the weight of your be
 measure things you put in your inventory system, to track the weight of the food bowl for
 your pets etc.
 
+![Picture of the fully assembled SmartScale 2 PCB](docs/media/SmartScale_PCB.jpg)
+
 This project is powered by the amazing [ESP32 SvelteKit](https://github.com/theelims/ESP32-sveltekit) framework.
 
 ## Software Features
