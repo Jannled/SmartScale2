@@ -7227,6 +7227,26 @@
 		)
 		(uuid "eab17804-b501-4388-ad52-7f518c49b54b")
 	)
+	(text_box "When do not use the Cs to VSS, the sensitivity is most sensitive.\nWhen adding the values of Cs will reduce sensitivity in the useful range (0≦Cs≦50pF)"
+		(exclude_from_sim no)
+		(at 149.86 91.44 0)
+		(size 34.29 12.7)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "a409617d-8152-4db1-985e-71ce7374755c")
+	)
 	(junction
 		(at 132.08 186.69)
 		(diameter 0)
@@ -12276,7 +12296,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "4042628d-e5d7-4d69-a0ce-08e098b462d3")
 		(property "Reference" "C13"
 			(at 129.159 89.0016 0)
@@ -12289,7 +12309,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "20pF"
 			(at 129.159 91.313 0)
 			(show_name no)
 			(do_not_autoplace no)

@@ -28,6 +28,7 @@ PsychicHttpServer server;
 
 ESP32SvelteKit esp32sveltekit(&server, 70);
 
+const int TOUCH_PIN = 18;
 const int LOADCELL_DOUT_PIN = 10;
 const int LOADCELL_SCK_PIN = 11;
 const long LOADCELL_OFFSET = 570000;//50682624;
@@ -57,6 +58,9 @@ void setup()
 {
 	// start serial and filesystem
 	Serial.begin(SERIAL_BAUD_RATE);
+
+	// Initialize the touch button
+	pinMode(TOUCH_PIN, INPUT);
 
 	// Initialize the load cell hardware
 	loadcell.begin(LOADCELL_DOUT_PIN, LOADCELL_SCK_PIN);
@@ -154,10 +158,10 @@ void loop()
 {
 	static unsigned int counter = 0;
 
-	// Read from HX711 ic and put it in JSON
+	// Read from HX711 ic
 	float reading = loadcell.get_units(10);
 
-	// Push update to state manager
+	// Put it in JSON and push update to state manager
 	scaleService.update([&](ScaleState &state) {
 		if(state.weight != reading)
 		{
@@ -168,9 +172,12 @@ void loop()
 		return StateUpdateResult::UNCHANGED;
 	}, "loop");
 
+	int touch_result = digitalRead(TOUCH_PIN);
+
 	// Update the OLED display
 	#ifdef ENABLE_DISPLAY
-	updateOLED(reading);
+	updateOLED(touch_result); // TODO DEBUG, REMOVE LATER
+	//updateOLED(reading);
 	#endif
 
 	counter++;
